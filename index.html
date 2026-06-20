@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition energetique au lycee</title>
+    <!-- icone de l'onglet
+      -->
+    <link rel="shortcuticon" href="./IMG_3334[1].JPG" type="image/x-icon">
+   
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <a class="logo" href="#">SOLARITZ</a>
+
+            <ul>
+                <li><a href="#projet">Projet</a></li>
+                <li><a href="#actions">Actions</a></li>
+                <li><a href="#calculatrice">Calculatrice</a></li>
+                <li><a href="#statistique">Statistique</a></li>
+                <li><a href="#impact">Impact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <p class="tag">Projet de lycee</p>
+            <h1>Transition energetique</h1>
+            <h2>Agir aujourd'hui pour proteger la nature demain</h2>
+            <p>
+                Notre projet explique comment un lycee peut reduire sa consommation
+                d'energie, utiliser davantage d'energies renouvelables et sensibiliser les
+                eleves aux gestes responsables.
+            </p>
+
+            <a class="btn" href="#calculatrice">Estimer les economies de CO2</a>
+        </div>
+
+        
+    </header>
+
+    <main>
+        <section id="projet" class="section intro-section">
+            <div class="section-text">
+                <p class="tag">Comprendre</p>
+                <h2>Qu'est-ce que la transition energetique ?</h2>
+                <p>
+                    La transition energetique consiste a remplacer progressivement les
+                    energies polluantes par des energies plus propres, comme le solaire,
+                    l'eolien ou l'hydraulique. Elle consiste aussi a moins gaspiller
+                    l'energie au quotidien.
+                </p>
+                <p>
+                    Au lycee, cela peut commence par des actions simples : eteindre les
+                    lumieres inutiles, limiter le chauffage, mieux utiliser les appareils
+                    numeriques et comprendre l'impact de nos habitudes.
+                </p>
+            </div>
+            
+            <div class="photo-placeholder">
+               <img src="./transition .jpg" alt="transition energetique" class="photo"
+           </div>
+        </section>
+
+        <section id="actions" class="section actions-section">
+            <div class="section-title">
+                <p class="tag">Agir au lycee</p>
+                <h2>Des actions simples mais utiles</h2>
+            </div>
+
+            <div class="cards">
+                <article class="card">
+                    <span>01</span>
+                    <h3>Economiser l'energie</h3>
+                    <p>Eteindre les lumieres, fermer les fenetres quand le chauffage fonctionne et debrancher les appareils inutilises.</p>
+                </article>
+
+                <article class="card">
+                    <span>02</span>
+                    <h3>Sensibiliser les eleves</h3>
+                    <p>Creer des affiches, organiser un quiz et proposer des defis entre classes pour rendre le projet plus vivant.</p>
+                </article>
+
+                <article class="card">
+                    <span>03</span>
+                    <h3>Choisir le renouvelable</h3>
+                    <p>Imaginer l'installation de panneaux solaires ou l'achat d'electricite verte pour diminuer les emissions de CO2.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="calculatrice" class="section calculator-section">
+            <div class="section-text">
+                <p class="tag">Calculatrice CO2</p>
+                <h2>Estimer les economies grace aux energies renouvelables</h2>
+                <p>
+                    Indique une quantite d'electricite produite par une energie renouvelable.
+                    La calculatrice estime le CO2 evite par rapport a une production
+                    d'electricite plus polluante.
+                </p>
+            </div>
+
+            <form class="calculator" id="co2-form">
+                <label for="energy">Electricite renouvelable produite par mois</label>
+                <div class="input-line">
+                    <input id="energy" type="number" min="0" step="1" placeholder="Exemple : 500">
+                    <span>kWh</span>
+                </div>
+
+                <label for="source">Source d'energie remplacee</label>
+                <select id="source">
+                    <option value="0.7">Charbon</option>
+                    <option value="0.4">Gaz naturel</option>
+                    <option value="0.25">Electricite classique moyenne</option>
+                </select>
+
+                <button type="submit">Calculer</button>
+
+                <div class="result-box">
+                    <p id="result">Entre une valeur pour voir le resultat.</p>
+                    <small>
+                        Estimation simplifiee : resultat = kWh renouvelables x facteur CO2.
+                    </small>
+                </div>
+            </form>
+        </section>
+
+          <section id="statistique" class="section statistic-section">
+
+            <div class="section-text">
+               <h3>Nos objectifs </h3>
+
+               <p class="text"> moins de gaspillage, plus de nature
+
+               </p>
+               <p class="description">Ce projet peut aider le lycée à réduire ses émissions de CO2, à faire des économies et à former des citoyens plus conscients des enjeux climatiques et environnementaux.</p>
+            </div>
+
+            <div class="stats">
+                <div class="card">
+                <h1>-25%</h1>
+                <p>de consommation visée</p>
+                </div>
+
+                <div class="card">
+                <h1>100%</h1>
+                <p>des élèves sensibilisés</p>
+                </div>
+        
+            </div>
+
+        </section>
+
+        <section id="impact" class="section impact-section">
+            <div class="impact-card">
+                <h2>Impact du projet</h2>
+                <p>
+                    Le but n'est pas seulement de faire des economie. Le projet permet aussi
+                    de changer les habitudes, de rendre les eleves plus attentifs a la nature
+                    et de montrer que chacun peut participer a son niveau.
+                </p>
+            </div>
+
+            <div class="tips">
+                <button class="tip-button active" data-tip="energie">Energie</button>
+                <button class="tip-button" data-tip="classe">Classe</button>
+                <button class="tip-button" data-tip="nature">Nature</button>
+            </div>
+
+            <p id="tip-text" class="tip-text">
+                Moins consommer d'energie permet de reduire les emissions de CO2.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Transition energetique au lycee</p>
+    </footer>
+</body>
+</html>
