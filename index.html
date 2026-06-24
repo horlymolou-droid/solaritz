@@ -15,6 +15,39 @@
 </head>
 
 <body>
+    <!-- MENU HAMBURGER -->
+<nav style="background:#166534; padding:15px 20px; position:sticky; top:0; z-index:100;">
+    <div style="max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+        <a href="index.html" style="color:white; font-weight:bold; text-decoration:none; font-size:22px;">
+             Solaritz
+        </a>
+        
+        <!-- Icône hamburger -->
+        <div id="hamburger" style="font-size:28px; color:white; cursor:pointer;">☰</div>
+    </div>
+
+    <!-- Menu déroulant mobile -->
+    <div id="mobileMenu" style="display:none; background:#166534; padding:15px; text-align:center;">
+        <a href="index.html" style="display:block; color:white; padding:12px; text-decoration:none;">Accueil</a>
+        <a href="projet.html" style="display:block; color:white; padding:12px; text-decoration:none;">Le Projet</a>
+        <a href="activites.html" style="display:block; color:white; padding:12px; text-decoration:none;">Activités</a>
+        <a href="inscription.html" style="display:block; color:white; padding:12px; text-decoration:none;">Inscription</a>
+        <a href="contact.html" style="display:block; color:white; padding:12px; text-decoration:none;">Contact</a>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    hamburger.addEventListener('click', () => {
+        if (mobileMenu.style.display === "block") {
+            mobileMenu.style.display = "none";
+        } else {
+            mobileMenu.style.display = "block";
+        }
+    });
+</script>
     <header class="hero">
         <nav class="navbar">
             <a class="logo" href="#">SOLARITZ</a>
